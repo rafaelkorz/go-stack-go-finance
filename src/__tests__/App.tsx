@@ -30,7 +30,7 @@ import App from '../App';
 const apiMock = new MockAdapter(api);
 
 const wait = (amount = 0): Promise<void> => {
-  return new Promise((resolve) => setTimeout(resolve, amount));
+  return new Promise(resolve => setTimeout(resolve, amount));
 };
 
 const actWait = async (amount = 0): Promise<void> => {
@@ -50,45 +50,45 @@ describe('Dashboard', () => {
           title: 'Loan',
           type: 'income',
           value: 1500,
+          category_id: '12a0cff7-8691-456d-b1ad-172d777f1942',
+          created_at: '2020-04-17T19:05:34.000Z',
+          updated_at: '2020-04-17T19:05:34.000Z',
           category: {
             id: '12a0cff7-8691-456d-b1ad-172d777f1942',
             title: 'Others',
             created_at: '2020-04-17T19:05:34.000Z',
             updated_at: '2020-04-17T19:05:34.000Z',
           },
-          category_id: '12a0cff7-8691-456d-b1ad-172d777f1942',
-          created_at: '2020-04-17T19:05:34.000Z',
-          updated_at: '2020-04-17T19:05:34.000Z',
         },
         {
           id: '3cd3b0e3-73ef-44e9-9f19-8d815eaa7bb4',
           title: 'Computer',
           type: 'income',
           value: 4500,
+          category_id: '12a0cff7-8691-456d-b1ad-172d777f1942',
+          created_at: '2020-04-18T19:05:34.000Z',
+          updated_at: '2020-04-18T19:05:34.000Z',
           category: {
             id: '12a0cff7-8691-456d-b1ad-172d777f1942',
             title: 'Sell',
             created_at: '2020-04-18T19:05:34.000Z',
             updated_at: '2020-04-17T19:05:34.000Z',
           },
-          category_id: '12a0cff7-8691-456d-b1ad-172d777f1942',
-          created_at: '2020-04-18T19:05:34.000Z',
-          updated_at: '2020-04-18T19:05:34.000Z',
         },
         {
           id: 'fb21571c-1087-4427-800c-3c30a484decf',
           title: 'Website Hosting',
           type: 'outcome',
           value: 50,
+          category_id: '12a0cff7-8691-456d-b1ad-172d777f1942',
+          created_at: '2020-04-19T19:05:34.000Z',
+          updated_at: '2020-04-19T19:05:34.000Z',
           category: {
             id: '12a0cff7-8691-456d-b1ad-172d777f1942',
             title: 'Hosting',
             created_at: '2020-04-17T19:05:34.000Z',
             updated_at: '2020-04-17T19:05:34.000Z',
           },
-          category_id: '12a0cff7-8691-456d-b1ad-172d777f1942',
-          created_at: '2020-04-19T19:05:34.000Z',
-          updated_at: '2020-04-19T19:05:34.000Z',
         },
       ],
       balance: {
