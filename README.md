@@ -1,3 +1,3 @@
 ## Imagem final
 
-<img src="./.github/go-finance.jpg" />
+<img src="./.github/gofinance.jpg" />
